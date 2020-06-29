@@ -1,8 +1,8 @@
 @font-face {
   font-family: "Binggrae";
-  src: url(Binggrae.ttf) format("truetype");
+  src: url(../font/Binggrae.ttf) format("truetype");
 }
-
+/* div가 정렬이 잘 안되는 경우 그 밖의 부모 뿐 아니라 html 범위도 확인해보아야한다!*/
 body {
   font-family: Binggrae;
   margin: 0;
@@ -117,18 +117,41 @@ body {
   list-style: none;
   display: flex;
   align-items: center;
-  justify-content: center;
-  width: 100%;
+  justify-content: space-between;
+  width: 95%;
   padding: auto;
 }
 
 .best_inner > li > figure {
   margin: 0;
   padding: 0;
-  width: auto;
-  height: auto;
+  width: 200px;
+  height: 200px;
   background-size: cover;
   background-position: center center;
+}
+
+img {
+  max-width: 100%;
+  height: 100%;
+}
+
+p {
+  width: 100%;
+  text-align: center;
+}
+
+button {
+  border: none;
+  width: 100%;
+  height: 100%;
+  background: white;
+  font-family: Binggrae;
+  border-radius: 100px;
+}
+
+button:hover {
+  background: #e8e8e8;
 }
 
 .fot {
@@ -216,5 +239,12 @@ body {
 
   .fot_list {
     display: none;
+  }
+
+  button {
+    border: none;
+    background: white;
+    font-family: Binggrae;
+    align-items: center;
   }
 }
